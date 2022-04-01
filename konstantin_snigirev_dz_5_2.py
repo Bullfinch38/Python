@@ -18,6 +18,9 @@ def get_name():
     for name in zip(tutors, klasses):
         yield name
 
+
 a = get_name()
 for i in a:
     print(type(i), i)
+    if len(klasses) <= len(tutors):
+        klasses.append('None')
